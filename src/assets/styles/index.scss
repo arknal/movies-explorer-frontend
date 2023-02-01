@@ -1,0 +1,24 @@
+@import "normalize";
+@import "../fonts/fonts.css";
+@import "colors";
+@import "breakpoints";
+
+.page {
+  background-color: $white;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 70px;
+  max-width: 1280px;
+  min-width: 320px;
+  overflow: hidden;
+}
+@media (max-width: #{$screen-md-min}) {
+  .page {
+    padding: 0 30px;
+  }
+}
+@media (max-width: #{$screen-sm-min}) {
+  .page {
+    padding: 0 14px;
+  }
+}
