@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import profileIcon from 'assets/images/profile-icon.svg';
 import { useState } from 'react';
 import routes from 'utils/routes';
-import './index.scss';
+import './Menu.scss';
 
 const Menu = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);

@@ -1,0 +1,39 @@
+@import 'assets/styles/colors';
+
+.search-form {
+  &__input-container {
+    height: 40px;
+    box-sizing: border-box;
+    border-right: 1px solid $darkGray;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin-right: 30px;
+  }
+  &__label {
+    display: block;
+    width: 22px;
+    height: 22px;
+    order: -1;
+  }
+  &__input {
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+  }
+  &__input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: $nobel;
+  }
+  &__input:focus {
+    outline: none;
+  }
+   &__input:focus + &__label svg > path {
+      fill: $black;
+   }
+}

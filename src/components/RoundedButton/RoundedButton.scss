@@ -1,0 +1,14 @@
+@import 'assets/styles/colors';
+
+.rounded-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: $green;
+  border: 0;
+  cursor: pointer;
+  transition: opacity .4s;
+}
+.rounded-btn:hover {
+  opacity: 0.8;
+}
