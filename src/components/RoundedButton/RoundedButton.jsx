@@ -1,6 +1,6 @@
 import './RoundedButton.scss';
 
-const RoundedButton = ({ children, ...props }) => {
+const RoundedButton = ({ children, onClick, ...props }) => {
   return (
     <button {...props} className='rounded-btn'>
       {children}

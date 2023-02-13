@@ -106,8 +106,10 @@
 @media (max-width: #{$screen-md-min}) {
   .menu {
     &__nav-wrapper {
+      z-index: 1;
       display: flex;
       justify-content: flex-end;
+      visibility: hidden;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -144,6 +146,7 @@
     }
     &__burger_active + &__nav-wrapper {
       opacity: 1;
+      visibility: visible;
     }
     &__link {
       padding: 0 0 8px 0;
