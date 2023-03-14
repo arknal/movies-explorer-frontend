@@ -1,0 +1,27 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/breakpoints';
+
+.gallery {
+  display: grid;
+  justify-content: center;
+  max-width: 100%;
+  grid-template-columns: repeat(3, minmax(300px, 364px));
+  row-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (max-width: #{$screen-laptops-min}) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(300px, 339px));
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: #{$screen-tablets-min}) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 339px));
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+ }

@@ -103,7 +103,7 @@
     background-image: url('~assets/images/burger-icon-opened.svg');
   }
 }
-@media (max-width: #{$screen-md-min}) {
+@media (max-width: #{$screen-tablets-min}) {
   .menu {
     &__nav-wrapper {
       z-index: 1;

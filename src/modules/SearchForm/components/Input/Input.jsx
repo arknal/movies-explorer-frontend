@@ -10,7 +10,7 @@ const Input = () => {
         className='search-form__input'
         placeholder='Фильм'
       />
-      <label for='search-form__input' className='search-form__label'>
+      <label htmlFor='search-form__input' className='search-form__label'>
         <SearchIcon />
       </label>
       <RoundedButton type='submit'>

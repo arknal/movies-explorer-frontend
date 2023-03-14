@@ -1,0 +1,49 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/breakpoints';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Inter';
+  font-style: normal;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+  height: 256px;
+  border-radius: 9px;
+  overflow: hidden;
+  
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 14px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $black;
+    margin: 0 0 9px 0;
+  }
+  &__duration {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    color: $nobel;
+    margin: 0;
+  }
+  &__img {
+    max-width: 100%;
+    max-height: 190px;
+    object-fit: cover;
+  }
+}
+
+.card:hover {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+}
